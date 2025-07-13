@@ -94,18 +94,28 @@
       pointer-events: none;
       opacity: .15; }
   .header-sa .caption h1 {
-    font-size: 96px;
-    line-height: 96px;
+    font-size: 80px;
+    padding-left: 45px;
+    line-height: 89px;
     letter-spacing: -4px; }
+  .subtext-sm {
+  font-size: 40px;            
+  font-weight: 500; 
+  padding-left: 45px;           
+  line-height: 1.4;           
+  margin-top: 15px;
+  letter-spacing: 0;
+}
   .header-sa .caption .text {
-    margin-top: 120px; }
+    margin-top: 48px;
+  padding-left: 45px; }
   .header-sa .imgs {
     position: relative; }
     .header-sa .imgs .cube img {
-      position: relative;
-      width: 120%;
-      right: -100px;
-      bottom: -100px; }
+        position: relative;
+        width: 100%; /* reduced from 120% to make it slightly smaller */
+        right: 50px; /* reduced from -100px to move it slightly right */
+         bottom: -20px; }
     .header-sa .imgs .circle {
       position: absolute;
       top: 50%;
@@ -123,6 +133,10 @@
         backdrop-filter: blur(10px);
         border-radius: 50%;
         z-index: -1; }
+      .header-sa .caption .butn {
+  margin-top: 25px !important; /* Override mt-40 */
+  margin-left: 105px; 
+}
 
 /* --------------- Services --------------- */
 .services-sa .item {
@@ -303,49 +317,25 @@
         font-size: 14px;
         opacity: .7; }
 
-/* --------------- Awards --------------- */
-.awards-sa .item-title {
-  padding: 0 15px 25px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-  .awards-sa .item-title > div {
-    padding: 0; }
-  .awards-sa .item-title h6 {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: .7; }
+.testimonials-sa .gl-rate {
+  display: flex;              /* you already have d-flex */
+  align-items: center;        /* you already have */
+  justify-content: flex-end;  /* ← add this line */
+}
 
-.awards-sa .item-line {
-  padding: 25px 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-  z-index: 3; }
-  .awards-sa .item-line > div {
-    padding: 0; }
-    .awards-sa .item-line > div:last-of-type {
-      text-align: right; }
-  .awards-sa .item-line:hover:after {
-    height: 100%; }
-  .awards-sa .item-line:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background: rgba(255, 255, 255, 0.05);
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
-    z-index: -1; }
-  .awards-sa .item-line .honors h6 {
-    font-size: 14px; }
-  .awards-sa .item-line .project-date span {
-    font-size: 14px;
-    opacity: .7; }
+.testimonials-sa .gl-rate .icon img {
+  width: 50px;    /* ensure it scales to the new .icon width */
+  height: auto;
+  display: block;
+}
+
+/* if you need spacing between logo and text */
+.testimonials-sa .gl-rate .cont {
+  padding-left: 25px;
+}
+
+
+
 
 /* --------------- Blogs --------------- */
 .blog-sa .item .img {
@@ -479,7 +469,8 @@ h6 {
   line-height: 32px; }
 
 .sub-color {
-  color: #808080; }
+  color: #75ac67; }
+  
 
 .sub-head {
   font-size: 20px;
@@ -557,7 +548,8 @@ p {
 @media screen and (max-width: 768px) {
   .header-sa .caption h1 {
     font-size: 50px;
-    line-height: 1.4; }
+    line-height: 1.4;
+  margin-top:60px; }
   .header-sa .imgs {
     width: 60%;
     -webkit-transform: translateY(70%);

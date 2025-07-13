@@ -659,6 +659,85 @@
     padding: 0 0 15px 90px; }
     .serv-details .accordion-item .accordion-body p {
       font-size: 14px; }
+/* === Why Work With Us / Mission === */
+.section-mission,
+.section-trust,
+.section-startup-fit,
+.section-process {
+  /* padding: 100px 0; */
+  /* background-color: #151515; */
+  color: #fff;
+}
+
+.section-mission h2,
+.section-trust h2,
+.section-startup-fit h2,
+.section-process h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-mission p,
+.section-startup-fit p,
+.section-trust p,
+.section-process p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ccc;
+  max-width: 900px;
+}
+
+/* === Trust Point List === */
+.trust-points {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 60px;
+}
+
+.trust-points li {
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  color: #bbb;
+}
+
+.trust-points li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: var(--main-color);
+  font-size: 14px;
+}
+
+/* === Process Section === */
+.section-process .row > div {
+  margin-bottom: 40px;
+}
+
+.section-process h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.section-process p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #aaa;
+}
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px; /* ⬅️ Add this line for spacing below h1 */
+  margin-top: 40px;
+  position: relative;
+}
+
+  
 
 .footer-sa .call-action h2 {
   font-size: 100px;
