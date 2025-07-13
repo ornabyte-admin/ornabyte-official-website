@@ -462,7 +462,8 @@ a {
     -o-transition: all .4s;
     transition: all .4s; }
   .butn.butn-rounded {
-    border-radius: 30px; }
+    border-radius: 30px;
+    }
   .butn.butn-bord {
     border: 1px solid #ccc; }
     .butn.butn-bord:hover {
