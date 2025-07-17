@@ -89,6 +89,13 @@
     <link rel="stylesheet" href="common/css/plugins.css" />
     <link rel="stylesheet" href="common/css/common_style.css" />
     <link rel="stylesheet" href="assets/css/inner_pages.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("AC3bG1VXYaEHxLVF2"); // Replace with your actual Public Key
+  })();
+</script>
+
   </head>
 
   <body>
@@ -364,7 +371,7 @@
                       <div class="morinfo mt-30">
                         <h6 class="mb-15">Email</h6>
                         <p>
-                          <a href="mailto:ornabyte@gmail.com"
+                          <a href="mailto:ornabyte.tech@gmail.com"
                             >ornabyte.tech@gmail.com</a
                           >
                         </p>
@@ -486,6 +493,8 @@
                                 </span>
                               </div>
                             </button>
+                            <div id="form-status"></div>
+
                           </div>
                           <small class="form-note" style="margin-top: 50px;"
                             >No spam, no pressure. You’ll hear from us within 24
@@ -608,10 +617,10 @@
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Ornabyte",
-              "image": "https://www.ornabyte.com/assets/imgs/Logo-light.svg",
+              "image": "https://www.ornabyte.com/assets/imgs/logo.png",
               "url": "https://www.ornabyte.com",
-              "telephone": "+91-98765-43210",
-              "email": "ornabyte@gmail.com",
+              "telephone": "+91-7558016064",
+              "email": "ornabyte.tech@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Kottayam",
@@ -631,6 +640,26 @@
         <!-- ==================== End Footer ==================== -->
       </div>
     </div>
+    <script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const form = this;
+    const status = document.getElementById("form-status");
+
+    emailjs.sendForm("service_97nsorh", "template_ya1jf8q", form)
+      .then(() => {
+        status.innerHTML = '<p class="success-message">✅ Message sent successfully!</p>';
+        form.reset();
+        setTimeout(() => {
+          window.location.href = "index.html"; // optional redirect
+        }, 2000);
+      }, (error) => {
+        console.error("EmailJS error:", error);
+        status.innerHTML = '<p class="error-message">❌ Something went wrong. Please try again later.</p>';
+      });
+  });
+</script>
+
 
     <!-- jQuery -->
     <script src="common/js/lib/jquery-3.6.0.min.js"></script>
