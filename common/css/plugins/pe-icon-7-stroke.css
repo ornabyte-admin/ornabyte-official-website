@@ -1,10 +1,11 @@
 @font-face {
 	font-family: 'Pe-icon-7-stroke';
-	src:url('https://uithemez.com/i/hubfolio_HTML/common/fonts/Pe-icon-7-stroke.eot?d7yf1v');
-	src:url('https://uithemez.com/i/hubfolio_HTML/common/fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v') format('embedded-opentype'),
-		url('https://uithemez.com/i/hubfolio_HTML/common/fonts/Pe-icon-7-stroke.woff?d7yf1v') format('woff'),
-		url('https://uithemez.com/i/hubfolio_HTML/common/fonts/Pe-icon-7-stroke.ttf?d7yf1v') format('truetype'),
-		url('https://uithemez.com/i/hubfolio_HTML/common/fonts/Pe-icon-7-stroke.svg?d7yf1v#Pe-icon-7-stroke') format('svg');
+	src:
+
+		url('../fonts/Pe-icon-7-stroke.eot') format('woff'),
+		url('../fonts/Pe-icon-7-stroke.woff') format('woff'),
+
+		;
 	font-weight: normal;
 	font-style: normal;
 }
