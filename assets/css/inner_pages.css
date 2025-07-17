@@ -1616,6 +1616,7 @@
     background: var(--main-color); }
 
 .sidebar .search-box {
+  padding-top: 170px;
   position: relative; }
   .sidebar .search-box input {
     color: #fff;
@@ -1627,6 +1628,7 @@
     .sidebar .search-box input:focus {
       border-color: #fff; }
   .sidebar .search-box .icon {
+    padding-top: 170px;
     position: absolute;
     top: 50%;
     right: 15px;
@@ -1723,6 +1725,147 @@
     transition: all .4s; }
     .sidebar .widget.tags a:hover {
       background: var(--main-color); }
+
+
+
+
+  /* Updated and new styles for blog layout refinements */
+.main-post ul.rest li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.blog.section-padding {
+  padding-top: 40px;
+  padding-bottom: 12px;
+}
+
+.main-post ul.rest li::before {
+  content: "•";
+  position: absolute;
+  padding-left: 15px;
+  left: 0;
+  top: 0;
+  color: var(--main-color); /* or #fff if no theme variable */
+   font-weight: bold;  }
+
+.main-post table.table td,
+.main-post table.table th {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px;
+  text-align: left; /* Right-align all cells */
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+  color: #fff;
+  background-color: #1c1c1c;
+}
+.plan {
+  /* background-color: #0d0d0d; */
+  padding: 25px 30px 25px 10px; 
+  border-radius: 10px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.plan p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ddd;
+  margin: 0 auto;
+  white-space: nowrap; /* Force one-line on larger screens */
+}
+
+.plan a {
+  color: #0000EE;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.plan a:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+/* Quiz Button Style */
+.btn.btn-sm {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  margin-left: 80px; 
+  margin-top: 20px;
+}
+
+.btn.btn-sm:hover {
+  background-color: #bbe667;
+  color: #111; /* dark text for better contrast on green */
+}
+
+
+/* ✅ Allow line break on small screens */
+@media (max-width: 768px) {
+  .plan p {
+    white-space: normal;
+  }
+}
+.post-qoute {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.post-qoute h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.post-qoute .l-block {
+  display: block;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.post-qoute .authors a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #00c8ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.post-qoute .authors a:hover {
+  color: #00a3d4;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .post-qoute h6 {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .post-qoute .authors a {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
 
 .footer-sa .call-action h2 {
   font-size: 100px;
