@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Taxare — Task Booking Platform MVP with Real-Time Features | Ornabyte
+    </title>
+    <meta
+      name="description"
+      content="Developed for Taxare, this MVP task booking platform includes real-time chat, JWT authentication, Razorpay integration, and mobile-friendly UI. Built with Django, WebSockets, and PostgreSQL."
+    />
+    <meta
+      name="keywords"
+      content="task booking MVP, service marketplace platform, Django MVP, JWT authentication, Razorpay integration, WebSocket chat, Kerala MVP development, Ornabyte projects"
+    />
+    <meta name="author" content="Ornabyte" />
+    <link
+      rel="canonical"
+      href="https://www.ornabyte.com/portfolio/taxare-task-booking-platform"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Taxare — MVP Service Booking Platform by Ornabyte"
+    />
+    <meta
+      property="og:description"
+      content="Task booking MVP built for Taxare: includes real-time messaging, booking lifecycle, Razorpay integration, and responsive dashboards for taskers and clients."
+    />
+    <meta
+      property="og:image"
+      content="https://www.ornabyte.com/assets/imgs/portfolio/project/taxare/taxare-1.png"
+    />
+    <meta
+      property="og:url"
+      content="https://www.ornabyte.com/portfolio/taxare-task-booking-platform"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Taxare — Service Marketplace MVP | Ornabyte"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore how Ornabyte built a scalable MVP task booking app for Taxare with secure auth, real-time chat, and responsive UI."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.ornabyte.com/assets/imgs/portfolio/project/taxare/taxare-1.png"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Taxare Task Booking MVP",
+        "description": "Task booking MVP with JWT auth, real-time messaging, Razorpay payments. Built using Django, PostgreSQL, WebSockets by Ornabyte.",
+        "url": "https://www.ornabyte.com/portfolio/taxare-task-booking-platform",
+        "author": {
+          "@type": "Organization",
+          "name": "Ornabyte",
+          "url": "https://www.ornabyte.com"
+        }
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="common/css/themify-icons.css" />
+
+    <link rel="stylesheet" href="common/css/fontawesome/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="common/css/plugins.css" />
+    <link rel="stylesheet" href="common/css/common_style.css" />
+    <link rel="stylesheet" href="assets/css/inner_pages.css" />
+  </head>
+  <body>
+    <!-- ==================== Start Loading ==================== -->
+
+    <div class="loader-wrap">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+
+      <div class="loader-wrap-heading">
+        <div class="load-text">
+          <span>L</span>
+          <span>o</span>
+          <span>a</span>
+          <span>d</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== End Loading ==================== -->
+
+    <div class="cursor"></div>
+
+    <!-- ==================== Start progress-scroll-button ==================== -->
+
+    <div class="progress-wrap cursor-pointer">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+
+    <!-- ==================== End progress-scroll-button ==================== -->
+
+    <!-- ==================== Start Navbar ==================== -->
+
+    <!-- ========== Primary Navigation ========== -->
+    <nav class="navbar navbar-expand-lg" aria-label="Primary Navigation">
+      <div class="container">
+        <!-- Logo -->
+        <a class="logo" href="index.html">
+          <img
+            src="assets/imgs/logo.png"
+            alt="Ornabyte Logo - Web Design Agency Kerala"
+            style="width: 100px; height: 34px"
+          />
+        </a>
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-services-kottayam-kerala.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="topnav d-flex align-items-center">
+          <a
+            href="start-project.html"
+            class="butn butn-rounded"
+            title="Start your project with a free strategy call"
+          >
+            <div class="d-flex align-items-center">
+              <span>Start Your Project</span>
+              <span class="icon ml-10">
+                <img src="common/imgs/arrow-top-right.svg" alt="Arrow Icon" />
+              </span>
+            </div>
+          </a>
+          <div class="menu-icon cursor-pointer" aria-label="Open Menu">
+            <span class="icon ti-align-right"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="hamenu">
+      <div
+        class="close-menu cursor-pointer ti-close"
+        aria-label="Close Menu"
+      ></div>
+      <div class="container-fluid rest d-flex">
+        <!-- Menu Links -->
+        <div class="menu-links">
+          <ul class="main-menu rest">
+            <!-- Home -->
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="index.html">
+                    <span class="fill-text" data-text="Home">Home</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Pages -->
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="about.html">
+                    <span class="fill-text" data-text="About Us">About Us</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="portfolio.html">
+                    <span class="fill-text" data-text="Portfolio"
+                      >Portfolio</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Portfolio -->
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="web-services-kottayam-kerala.html">
+                    <span class="fill-text" data-text="Services">Services</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Blog -->
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="blogs.html">
+                    <span class="fill-text" data-text="Blogs">Blogs</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Contact -->
+            <li>
+              <div class="o-hidden">
+                <a href="start-project.html" class="link">
+                  <span class="fill-text" data-text="Start Your Project"
+                    >Start Your Project</span
+                  >
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info & Social -->
+        <div class="cont-info valign">
+          <div class="text-center full-width">
+            <div class="logo">
+              <img src="assets/imgs/logo.png" alt="Ornabyte Logo" />
+            </div>
+            <div class="social-icon mt-40">
+              <a
+                href="https://www.linkedin.com/company/ornabyte/"
+                title="Connect on Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://www.facebook.com/ornabyte"
+                title="Follow us on LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://instagram.com/ornabyte"
+                title="See Instagram Portfolio"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://behance.net/ornabyte"
+                title="See Instagram Portfolio"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </div>
+            <div class="item mt-30">
+              <h5>Kottayam,<br />Kerala</h5>
+            </div>
+            <div class="item mt-10">
+              <h5>
+                <a href="mailto:ornabyte.tech@gmail.com"
+                  >ornabyte.tech@gmail.com</a
+                >
+              </h5>
+              <h5 class="underline">
+                <a href="tel:+918139048679">+91 8139048679</a><br />
+                <a href="tel:+918139048679">+91 7558016064</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== End Navbar ==================== -->
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- ==================== Start Header ==================== -->
+
+          <header class="work-hed2 section-padding pb-0">
+            <div class="container">
+              <div class="caption sec-head text-center mb-80">
+                <span class="sub-head mb-10"
+                  >MVP Development • Task Booking Platform</span
+                >
+                <h1 class="fz-80 fw-600">
+                  Built to Book — A Smart Service Platform for Everyday Tasks
+                </h1>
+              </div>
+              <div class="info mb-80 text-center">
+                <div class="row">
+                  <div class="col-md-6 col-lg-3">
+                    <div class="item mb-30">
+                      <span class="opacity-8 mb-10">Category</span>
+                      <h6>Service Marketplace MVP</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="item mb-30">
+                      <span class="opacity-8 mb-10">Client</span>
+                      <h6>Taxare</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="item mb-30">
+                      <span class="opacity-8 mb-10">Start Date</span>
+                      <h6>2 July 2025</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                      <span class="opacity-8 mb-10">Tech Stack</span>
+                      <h6>Django, JWT, PostgreSQL, Razorpay, WebSockets</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="fit-img radius-15">
+                <img
+                  src="assets/imgs/portfolio/project/taxare/taxare-1.png"
+                  alt="Tasker booking platform UI"
+                  data-lag="0"
+                  data-speed="0.5"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </header>
+
+          <!-- ==================== End Header ==================== -->
+
+          <!-- ==================== Start Services ==================== -->
+
+          <section class="proj-details section-padding">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-5">
+                  <div>
+                    <h2>Project Overview</h2>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="content">
+                    <div class="text mt-30 mb-30">
+                      <p>
+                        Taxare is a powerful MVP solution that connects users
+                        with skilled taskers for services like cleaning,
+                        electrical work, repairs, and personal tasks. We focused
+                        on speed, simplicity, and smart logic to help users book
+                        trusted professionals in their locality.
+                      </p>
+                    </div>
+                    <ul class="rest">
+                      <li class="mb-15 pb-15 bord-thin-bottom-light">
+                        JWT-based authentication and user roles (client &
+                        tasker)
+                      </li>
+                      <li class="mb-15 pb-15 bord-thin-bottom-light">
+                        Real-time booking system with availability filters
+                      </li>
+                      <li class="mb-15 pb-15 bord-thin-bottom-light">
+                        In-app chat using Django Channels + WebSockets
+                      </li>
+                      <li class="mb-15 pb-15 bord-thin-bottom-light">
+                        Booking lifecycle with status tracking and notifications
+                      </li>
+                      <li class="mb-15 pb-15 bord-thin-bottom-light">
+                        Secure payments held until task confirmation
+                      </li>
+                      <li>Responsive dashboard for both clients and taskers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row sm-marg mt-80">
+                <div class="col-md-6">
+                  <div class="img sm-mb10">
+                    <img
+                      src="assets/imgs/portfolio/project/taxare/taxare-2.png"
+                      alt="Tasker and client dashboard UI design"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img">
+                    <img
+                      src="assets/imgs/portfolio/project/taxare/taxare-3.png"
+                      alt="Service booking and tasker profile"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="img mt-10">
+                    <img
+                      src="assets/imgs/portfolio/project/taxare/taxare-4.png"
+                      alt="Real-time chat system between client and tasker"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mt-80">
+                <div class="col-lg-5 valign">
+                  <div class="content">
+                    <h3>Build Trust. Book Faster. Serve Better.</h3>
+                    <div class="text mt-30">
+                      <p>
+                        From secure login to live messaging, every interaction
+                        in Taxare is optimized for speed, trust, and conversion.
+                        We’ve packed modern functionality into a smooth MVP
+                        that’s ready for real-world scaling.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="content">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse1"
+                            aria-expanded="true"
+                            aria-controls="collapse1"
+                          >
+                            <span>1.</span> MVP Discovery
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse1"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading1"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              We identified the top 4 user goals: search,
+                              filter, book, and message. This formed the MVP
+                              base with core usability at every step.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item active">
+                        <h2 class="accordion-header" id="heading2">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse2"
+                            aria-expanded="false"
+                            aria-controls="collapse2"
+                          >
+                            <span>2.</span> Secure Auth + Role Separation
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse2"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="heading2"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Implemented login/register for taskers and clients
+                              separately with JWT, profile setup, service
+                              selection, and approval system.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse3"
+                            aria-expanded="false"
+                            aria-controls="collapse3"
+                          >
+                            <span>3.</span>Booking Logic + Messaging
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse3"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading3"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Built the full booking lifecycle + real-time chat
+                              with notifications to ensure smooth collaboration
+                              before, during, and after the task.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse4"
+                            aria-expanded="false"
+                            aria-controls="collapse4"
+                          >
+                            <span>4.</span>Payment Flow & Deployment
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse4"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading4"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Integrated Razorpay and dynamic status-based
+                              releases. Entire platform was deployed on cloud
+                              with scalability in mind.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ==================== End Services ==================== -->
+        </main>
+
+        <!-- ==================== Start Footer ==================== -->
+
+        <footer class="footer-sa pb-80">
+          <div class="container section-padding">
+            <!-- CTA -->
+            <div class="call-action text-center mb-80">
+              <h2>
+                <a href="start-project.html">
+                  Let's Build Something That Works — Fast.
+                </a>
+                <p class="mt-10 sub-color" style="font-size: 30px">
+                  Free 15-min strategy call. Fast replies. Real results.
+                </p>
+                <div
+                  class="buton d-flex align-items-center justify-content-center"
+                >
+                  <a href="start-project.html">
+                    <span class="mb-10">Start</span><br />
+                    <span>
+                      Now
+                      <img
+                        src="common/imgs/arrow-top-right.svg"
+                        alt="Arrow icon"
+                      />
+                    </span>
+                  </a>
+                </div>
+              </h2>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <div class="row">
+                <div class="col-lg-5">
+                  <a href="index.html" class="logo md-mb50">
+                    <img
+                      src="assets/imgs/logo.png"
+                      alt="Ornabyte Logo - Kerala Web Agency"
+                    />
+                  </a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="item">
+                        <span class="sub-color">Location</span>
+                        <p>Kottayam, Kerala, India</p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 d-flex justify-content-end justify-end"
+                    >
+                      <div class="item">
+                        <span class="sub-color">Inquiry</span>
+                        <p>
+                          <a href="mailto:ornabyte.tech@gmail.com"
+                            >ornabyte.tech@gmail.com</a
+                          >
+                        </p>
+                        <p><a href="tel:+918139048679">+91 8139048679</a></p>
+                        <p><a href="tel:+917558016064">+91 7558016064</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 offset-lg-5">
+                  <div class="social-icon">
+                    <a
+                      href="https://instagram.com/ornabyte/ornabyte"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/ornabyte/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://behance.net/ornabyte"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <i class="fa-brands fa-behance"></i>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/ornabyte"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub Footer -->
+          <div class="sub-footer">
+            <div class="container bord-thin-top-light pt-50">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="copy sub-color md-mb30">
+                    <p>
+                      © 2025 <a href="index.html">Ornabyte</a>. All Rights
+                      Reserved.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-end">
+                  <div class="links sub-color d-flex justify-content-between">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">Studio</a>
+                    <a href="blogs.html">Blog</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LocalBusiness Schema (JSON-LD) -->
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Ornabyte",
+              "image": "https://www.ornabyte.com/assets/imgs/logo.png",
+              "url": "https://www.ornabyte.com",
+              "telephone": "+91-8139048679",
+              "email": "ornabyte.tech@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kottayam",
+                "addressRegion": "Kerala",
+                "addressCountry": "IN"
+              },
+              "sameAs": [
+                "https://instagram.com/ornabyte/ornabyte",
+                "https://www.linkedin.com/company/ornabyte/",
+                "https://www.facebook.com/ornabyte",
+                "https://github.com/ornabyte"
+              ]
+            }
+          </script>
+        </footer>
+
+        <!-- ==================== End Footer ==================== -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="common/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="common/js/lib/jquery-migrate-3.4.0.min.js"></script>
+
+    <!-- plugins -->
+    <script src="common/js/lib/plugins.js"></script>
+    <!-- GSAP -->
+    <script src="common/js/gsap_lib/gsap.min.js"></script>
+    <script src="common/js/gsap_lib/ScrollSmoother.min.js"></script>
+    <script src="common/js/gsap_lib/ScrollTrigger.min.js"></script>
+    <script src="common/js/gsap_lib/SplitText.min.js"></script>
+    <script src="common/js/gsap_lib/matter.js"></script>
+    <script src="common/js/gsap_lib/throwable.js"></script>
+
+    <!-- common scripts -->
+    <script src="common/js/common_scripts.js"></script>
+
+    <!-- custom scripts -->
+    <script src="assets/js/inner_pages.js"></script>
+  </body>
+</html>

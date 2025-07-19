@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Plantopia — Plant Ecommerce Website Built with Django | Ornabyte
+    </title>
+    <meta
+      name="description"
+      content="Discover how Ornabyte built a clean, fast, and scalable plant ecommerce website for Plantopia using Django, MySQL, and AWS. Explore the green commerce case study here."
+    />
+    <meta
+      name="keywords"
+      content="plant ecommerce website, online plant store India, Django ecommerce site, green commerce, plant delivery website, ecommerce web design, plant marketplace development, Ornabyte projects"
+    />
+    <meta name="author" content="Ornabyte" />
+    <link
+      rel="canonical"
+      href="https://www.ornabyte.com/portfolio/plantopia-plant-ecommerce-platform"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Plantopia — Ecommerce Website for Plants | Ornabyte"
+    />
+    <meta
+      property="og:description"
+      content="Modern ecommerce website for plants built with Django, MySQL, and AWS. Explore how we built a plant store that grows conversions."
+    />
+    <meta
+      property="og:image"
+      content="https://www.ornabyte.com/assets/imgs/portfolio/project/plantopia/plantopia-1.png"
+    />
+    <meta
+      property="og:url"
+      content="https://www.ornabyte.com/portfolio/plantopia-plant-ecommerce-platform"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Plantopia — Plant Ecommerce Platform Built with Django | Ornabyte"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore this green commerce website designed for plant lovers. Django + AWS ecommerce solution by Ornabyte."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.ornabyte.com/assets/imgs/portfolio/project/plantopia/plantopia-1.png"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Plantopia — Plant Ecommerce Website",
+        "description": "Ecommerce website for plant delivery with cart, filters, checkout, and mobile design. Built using Python Django and MySQL. Case study by Ornabyte.",
+        "url": "https://www.ornabyte.com/portfolio/plantopia-plant-ecommerce-platform",
+        "author": {
+          "@type": "Organization",
+          "name": "Ornabyte",
+          "url": "https://www.ornabyte.com"
+        }
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="common/css/themify-icons.css" />
+
+    <link rel="stylesheet" href="common/css/fontawesome/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="common/css/plugins.css" />
+    <link rel="stylesheet" href="common/css/common_style.css" />
+    <link rel="stylesheet" href="assets/css/inner_pages.css" />
+  </head>
+
+  <body>
+    <!-- ==================== Start Loading ==================== -->
+
+    <div class="loader-wrap">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+
+      <div class="loader-wrap-heading">
+        <div class="load-text">
+          <span>L</span>
+          <span>o</span>
+          <span>a</span>
+          <span>d</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== End Loading ==================== -->
+
+    <div class="cursor"></div>
+
+    <!-- ==================== Start progress-scroll-button ==================== -->
+
+    <div class="progress-wrap cursor-pointer">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+
+    <!-- ==================== End progress-scroll-button ==================== -->
+
+    <!-- ==================== Start Navbar ==================== -->
+
+    <!-- ========== Primary Navigation ========== -->
+    <nav class="navbar navbar-expand-lg" aria-label="Primary Navigation">
+      <div class="container">
+        <!-- Logo -->
+        <a class="logo" href="index.html">
+          <img
+            src="assets/imgs/logo.png"
+            alt="Ornabyte Logo - Web Design Agency Kerala"
+            style="width: 100px; height: 34px"
+          />
+        </a>
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-services-kottayam-kerala.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="topnav d-flex align-items-center">
+          <a
+            href="start-project.html"
+            class="butn butn-rounded"
+            title="Start your project with a free strategy call"
+          >
+            <div class="d-flex align-items-center">
+              <span>Start Your Project</span>
+              <span class="icon ml-10">
+                <img src="common/imgs/arrow-top-right.svg" alt="Arrow Icon" />
+              </span>
+            </div>
+          </a>
+          <div class="menu-icon cursor-pointer" aria-label="Open Menu">
+            <span class="icon ti-align-right"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="hamenu">
+      <div
+        class="close-menu cursor-pointer ti-close"
+        aria-label="Close Menu"
+      ></div>
+      <div class="container-fluid rest d-flex">
+        <!-- Menu Links -->
+        <div class="menu-links">
+          <ul class="main-menu rest">
+            <!-- Home -->
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="index.html">
+                    <span class="fill-text" data-text="Home">Home</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Pages -->
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="about.html">
+                    <span class="fill-text" data-text="About Us">About Us</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="portfolio.html">
+                    <span class="fill-text" data-text="Portfolio"
+                      >Portfolio</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Portfolio -->
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="web-services-kottayam-kerala.html">
+                    <span class="fill-text" data-text="Services">Services</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Blog -->
+            <li>
+              <div class="o-hidden">
+                <div class="link cursor-pointer dmenu">
+                  <a href="blogs.html">
+                    <span class="fill-text" data-text="Blogs">Blogs</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Contact -->
+            <li>
+              <div class="o-hidden">
+                <a href="start-project.html" class="link">
+                  <span class="fill-text" data-text="Start Your Project"
+                    >Start Your Project</span
+                  >
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info & Social -->
+        <div class="cont-info valign">
+          <div class="text-center full-width">
+            <div class="logo">
+              <img src="assets/imgs/logo.png" alt="Ornabyte Logo" />
+            </div>
+            <div class="social-icon mt-40">
+              <a
+                href="https://www.linkedin.com/company/ornabyte/"
+                title="Connect on Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://www.facebook.com/ornabyte"
+                title="Follow us on LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://instagram.com/ornabyte"
+                title="See Instagram Portfolio"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://behance.net/ornabyte"
+                title="See Instagram Portfolio"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </div>
+            <div class="item mt-30">
+              <h5>Kottayam,<br />Kerala</h5>
+            </div>
+            <div class="item mt-10">
+              <h5>
+                <a href="mailto:ornabyte.tech@gmail.com"
+                  >ornabyte.tech@gmail.com</a
+                >
+              </h5>
+              <h5 class="underline">
+                <a href="tel:+918139048679">+91 8139048679</a><br />
+                <a href="tel:+917558016064">+91 7558016064</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== End Navbar ==================== -->
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- ==================== Start Header ==================== -->
+
+          <header class="work-hed2 section-padding pb-0">
+            <div class="container">
+              <div class="caption sec-head text-center mb-80">
+                <span class="sub-head mb-10">Ecommerce Web Design</span>
+                <h1 class="fz-80 fw-600">
+                  Plantopia — Green Commerce Built to Grow
+                </h1>
+              </div>
+              <div class="info mb-80 text-center">
+                <div class="row">
+                  <div class="col-md-6 col-lg-3">
+                    <div class="item mb-30">
+                      <span class="opacity-8 mb-10">Category</span>
+                      <h6>Ecommerce Website</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="item mb-30">
+                      <span class="opacity-8 mb-10">Client</span>
+                      <h6>Plantopia</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="item mb-30">
+                      <span class="opacity-8 mb-10">Start Date</span>
+                      <h6>18 June 2025</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                      <span class="opacity-8 mb-10">Tech Stack</span>
+                      <h6>Python Django, MySQL, AWS</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="fit-img radius-15">
+                <img
+                  src="assets/imgs/portfolio/project/plantopia/plantopia-1.png"
+                  alt="Plantopia ecommerce homepage showcasing plant product catalog"
+                  data-lag="0"
+                  data-speed="0.5"
+                />
+              </div>
+            </div>
+          </header>
+
+          <!-- ==================== End Header ==================== -->
+
+          <!-- ==================== Start Services ==================== -->
+
+          <section class="proj-details section-padding">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-5">
+                  <div>
+                    <h2>Project Overview</h2>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="content">
+                    <div class="text mt-30 mb-30">
+                      <p>
+                        Plantopia is a modern ecommerce platform crafted for
+                        plant enthusiasts. We built a fully functional online
+                        store that allows users to browse products, add to cart,
+                        create secure accounts, and checkout smoothly — all
+                        powered by Python Django on the backend and MySQL for
+                        robust data handling.
+                      </p>
+                    </div>
+                    <div class="text mb-30">
+                      <p>
+                        The website includes a dynamic product listing page,
+                        secure user authentication, cart functionality, and a
+                        streamlined checkout process. This project highlights
+                        our expertise in building ecommerce platforms that are
+                        clean, user-friendly, and designed to convert.
+                      </p>
+                    </div>
+                    <ul class="rest">
+                      <li class="mb-15 pb-15 bord-thin-bottom-light">
+                        Product listing with real-time UI filters
+                      </li>
+                      <li class="mb-15 pb-15 bord-thin-bottom-light">
+                        Secure sign-up, login & authentication
+                      </li>
+                      <li class="mb-15 pb-15 bord-thin-bottom-light">
+                        Cart management and streamlined checkout
+                      </li>
+                      <li>Optimized for mobile shopping and fast page loads</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row sm-marg mt-80">
+                <div class="col-md-6">
+                  <div class="img sm-mb10">
+                    <img
+                      src="assets/imgs/portfolio/project/plantopia/plantopia-3.png"
+                      alt="Plantopia mobile ecommerce layout showing cart and filters"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img">
+                    <img
+                      src="assets/imgs/portfolio/project/plantopia/plantopia-4.png"
+                      alt="Desktop version of ecommerce website Plantopia"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="img mt-10">
+                    <img
+                      src="assets/imgs/portfolio/project/plantopia/plantopia-2.png"
+                      alt="Full product grid and cart of Plantopia site"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mt-80">
+                <div class="col-lg-5 valign">
+                  <div class="content">
+                    <h3>From Roots to Revenue — A Green Commerce Success</h3>
+                    <div class="text mt-30">
+                      <p>
+                        We designed Plantopia’s ecommerce experience to match
+                        the beauty of nature and the expectations of modern
+                        online buyers. The result is a store that converts
+                        first-time visitors into lifelong plant lovers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="content">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse1"
+                            aria-expanded="true"
+                            aria-controls="collapse1"
+                          >
+                            <span>1.</span> Strategy
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse1"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading1"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              We studied ecommerce buying trends and customer
+                              journey flows — placing CTA buttons, cart icons,
+                              and trust elements where they matter most.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item active">
+                        <h2 class="accordion-header" id="heading2">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse2"
+                            aria-expanded="false"
+                            aria-controls="collapse2"
+                          >
+                            <span>2.</span> Design & Flow
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse2"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="heading2"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Minimal, earthy aesthetics paired with logical
+                              user paths ensured users could explore, add to
+                              cart, and checkout in under 2 minutes.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse3"
+                            aria-expanded="false"
+                            aria-controls="collapse3"
+                          >
+                            <span>3.</span>Development
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse3"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading3"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Secure auth, cart logic, and responsive coding
+                              were handled with performance in mind — including
+                              input validation and fail-safe cart updates.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse4"
+                            aria-expanded="false"
+                            aria-controls="collapse4"
+                          >
+                            <span>4.</span>Growth Results
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse4"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading4"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Post-launch, Plantopia saw a boost in average time
+                              spent on site and a 3x increase in completed
+                              checkouts over their previous Instagram-only sales
+                              strategy.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ==================== End Services ==================== -->
+        </main>
+
+        <!-- ==================== Start Footer ==================== -->
+
+        <footer class="footer-sa pb-80">
+          <div class="container section-padding">
+            <!-- CTA -->
+            <div class="call-action text-center mb-80">
+              <h2>
+                <a href="start-project.html">
+                  Let's Build Something That Works — Fast.
+                </a>
+                <p class="mt-10 sub-color" style="font-size: 30px">
+                  Free 15-min strategy call. Fast replies. Real results.
+                </p>
+                <div
+                  class="buton d-flex align-items-center justify-content-center"
+                >
+                  <a href="start-project.html">
+                    <span class="mb-10">Start</span><br />
+                    <span>
+                      Now
+                      <img
+                        src="common/imgs/arrow-top-right.svg"
+                        alt="Arrow icon"
+                      />
+                    </span>
+                  </a>
+                </div>
+              </h2>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <div class="row">
+                <div class="col-lg-5">
+                  <a href="index.html" class="logo md-mb50">
+                    <img
+                      src="assets/imgs/logo.png"
+                      alt="Ornabyte Logo - Kerala Web Agency"
+                    />
+                  </a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="item">
+                        <span class="sub-color">Location</span>
+                        <p>Kottayam, Kerala, India</p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 d-flex justify-content-end justify-end"
+                    >
+                      <div class="item">
+                        <span class="sub-color">Inquiry</span>
+                        <p>
+                          <a href="mailto:ornabyte.tech@gmail.com"
+                            >ornabyte.tech@gmail.com</a
+                          >
+                        </p>
+                        <p><a href="tel:+918139048679">+91 8139048679</a></p>
+                        <p><a href="tel:+917558016064">+91 7558016064</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 offset-lg-5">
+                  <div class="social-icon">
+                    <a
+                      href="https://instagram.com/ornabyte/ornabyte"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/ornabyte/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://behance.net/ornabyte"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <i class="fa-brands fa-behance"></i>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/ornabyte"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub Footer -->
+          <div class="sub-footer">
+            <div class="container bord-thin-top-light pt-50">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="copy sub-color md-mb30">
+                    <p>
+                      © 2025 <a href="index.html">Ornabyte</a>. All Rights
+                      Reserved.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-end">
+                  <div class="links sub-color d-flex justify-content-between">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">Studio</a>
+                    <a href="blogs.html">Blog</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LocalBusiness Schema (JSON-LD) -->
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Ornabyte",
+              "image": "https://www.ornabyte.com/assets/imgs/logo.png",
+              "url": "https://www.ornabyte.com",
+              "telephone": "+91-7558016064",
+              "email": "ornabyte.tech@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kottayam",
+                "addressRegion": "Kerala",
+                "addressCountry": "IN"
+              },
+              "sameAs": [
+                "https://instagram.com/ornabyte/ornabyte",
+                "https://www.linkedin.com/company/ornabyte/",
+                "https://www.facebook.com/ornabyte",
+                "https://github.com/ornabyte"
+              ]
+            }
+          </script>
+        </footer>
+
+        <!-- ==================== End Footer ==================== -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="common/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="common/js/lib/jquery-migrate-3.4.0.min.js"></script>
+
+    <!-- plugins -->
+    <script src="common/js/lib/plugins.js"></script>
+
+    <!-- GSAP -->
+    <script src="common/js/gsap_lib/gsap.min.js"></script>
+    <script src="common/js/gsap_lib/ScrollSmoother.min.js"></script>
+    <script src="common/js/gsap_lib/ScrollTrigger.min.js"></script>
+    <script src="common/js/gsap_lib/SplitText.min.js"></script>
+    <script src="common/js/gsap_lib/matter.js"></script>
+    <script src="common/js/gsap_lib/throwable.js"></script>
+
+    <!-- common scripts -->
+    <script src="common/js/common_scripts.js"></script>
+
+    <!-- custom scripts -->
+    <script src="assets/js/inner_pages.js"></script>
+  </body>
+</html>
