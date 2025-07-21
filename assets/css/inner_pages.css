@@ -1190,6 +1190,8 @@
       overflow: hidden;
       margin-top: 50px; }
       .works-mp .item .img img {
+        /* corrections done for the protfolio alignment issue in mobile view -arjun 20/07/2025 */
+        display: block; 
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
@@ -2331,4 +2333,10 @@ p {
       margin-bottom: 15px; }
   .footer-sa .call-action h2 {
     font-size: 35px;
-    line-height: 1.4; } }
+    line-height: 1.4; } 
+
+    /* arjun 20/07/2025 - mobile response issue portfolio page */
+  .works-mp .item .img {
+    height: 200px;
+  }
+}
